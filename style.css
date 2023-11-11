@@ -3,8 +3,7 @@
     color: #D0D9CD;
 }
 
-
-body {
+body, html {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -16,13 +15,14 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 24px 32px;
+    padding: 40px 32px;
     background-color: #78866b;
 }
 
 .title {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
     font-weight: 800;
     color: #D0D9CD;
 }
@@ -34,4 +34,147 @@ body {
 
 .contact-txt {
     text-decoration: none;
+}
+
+.contact-txt:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #849DA9;
+}
+
+/*next section*/
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(132, 157, 169, 0.6) 0%, rgba(132, 157, 169, 0) 100%);
+    pointer-events: none;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    filter: saturate(20%);
+    overflow: hidden;
+    z-index: 1; /* Set a lower z-index value for the image container */
+}
+
+.blurred-image {
+    margin: 0;
+    height: 900px;
+    width: 100%;
+    filter: blur(10px) hue-rotate(30deg);
+}
+
+.mission-statement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0; Remove padding */
+    width: 100%; /* Set width to 100% */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.title-mission {
+    justify-self: start;
+    font-size: 78px;
+    font-weight: 900;
+    margin: 0 0 50px 0;
+    flex: none;
+}
+
+.statement-txt {
+    font-size: 32px;
+    margin: 50px 0 50px 0;
+    text-align: center;
+    max-width: 1100px;
+    line-height: 200%;
+}
+
+.scanQR-introduction {
+    margin-top: auto;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.QR-link {
+    text-decoration: none;
+    color: #BD6B4F;
+}
+
+
+/* next section*/
+
+.Help-descriptions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 150px 0;
+    flex: 1;
+    background-color: #849DA9;
+    box-shadow: 0px -3px 100px rgba(132, 157, 169, 0.6); 
+}
+
+.title-description {
+    justify-self: flex-start;
+    font-size: 78px;
+    font-weight: 300;
+    color: #E0E0E0;
+}
+
+.description-txt {
+    font-size: 38px;
+    text-align: center;
+    max-width: 1700px;
+    line-height: 200%;
+    color: #E0E0E0;
+}
+
+/*next section*/
+
+.qr-code {
+    display: flex;
+    flex-direction: column;
+    background-color: #E17E63;
+    align-items: center;
+    padding: 75px 0 75px 0;
+}
+
+.txt-dsc {
+    font-size: 45px;
+    font-weight: 900;
+    color: #E0E0E0;
+    margin-bottom: 48px;
+}
+
+.the-picture {
+    height: 600px;
+    width: auto;
+}
+
+/* next section */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F735F;
+    padding: 24px 0;
 }

@@ -1,0 +1,76 @@
+.contact-txt, .footer, .title, .contact, .contact-title {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #D0D9CD;
+}
+
+body, html {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 40px 32px;
+    background-color: #78866b;
+}
+
+.title {
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    font-weight: 800;
+    color: #D0D9CD;
+}
+
+.contact-txt {
+    margin-left: auto;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.contact-txt:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #849DA9;
+}
+
+/* next section*/
+
+
+.contact-title {
+    color:  #253033;
+    font-size: 73px;
+}
+
+.information-contact {
+    color:  #253033;
+    font-size: 30px;
+    max-width: 1000px;
+    text-align: center;
+    line-height: 200%;
+}
+
+.contact {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 124px 0; 
+    flex: 1;
+}
+
+
+/*next section*/
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5F735F;
+    padding: 24px 0;
+}
